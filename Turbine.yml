@@ -1,6 +1,16 @@
 server:
   port: 8001
+  
+spring:
+  rabbitmq:
+    host: hornet.rmq.cloudamqp.com
+    username: dyeowntt
+    virtual-host: dyeowntt
+    password: 0LrXtN3QxWmnJ1VA251Wpl5vg-IambPI
 
 eureka:
   client:
+    fetchRegistry: true
     registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
