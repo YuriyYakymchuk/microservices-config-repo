@@ -1,16 +1,7 @@
 server:
   port: 8084
 
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/microservices?useSSL=false
-    username: root
-    password: root
-    driver-class-name: com.mysql.jdbc.Driver
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
+spring.cloud.stream.bindings:
   input:
     destination: bill
     group: bill

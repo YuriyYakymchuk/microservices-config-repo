@@ -1,5 +1,13 @@
 spring:
-
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices?useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
   rabbitmq:
     host: hornet.rmq.cloudamqp.com
     username: dyeowntt
