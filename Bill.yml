@@ -11,4 +11,4 @@ spring.cloud.stream.bindings:
       instanceIndex: 0
       
 custom:
-    message: Hello Yuriy Yakymchuk
+    message: Hello Yuriy Yakymchuk Web Hook
