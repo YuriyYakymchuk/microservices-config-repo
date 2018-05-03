@@ -9,3 +9,6 @@ spring.cloud.stream.bindings:
       partitioned: false
       instanceCount: 1
       instanceIndex: 0
+      
+custom:
+    message: Hello
