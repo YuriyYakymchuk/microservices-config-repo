@@ -10,5 +10,18 @@ spring.cloud.stream.bindings:
       instanceCount: 1
       instanceIndex: 0
       
+security:
+  oauth2:
+    client:
+      clientId: client
+      clientSecret: secret
+      scope: openid
+      accessTokenUri: http://localhost:8500/uaa/oauth/token
+      userAuthorizationUri: http://localhost:8500/uaa/oauth/authorize
+    resource:
+      jwt:
+        key-uri: http://localhost:8500/uaa/oauth/token_key
+
+      
 custom:
     message: Hello Yuriy Yakymchuk Git
