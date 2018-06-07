@@ -13,8 +13,8 @@ spring.cloud.stream.bindings:
 security:
   oauth2:
     client:
-      clientId: client
-      clientSecret: secret
+      clientId: Bill
+      clientSecret: BillSecret
       scope: openid
       accessTokenUri: http://localhost:8500/uaa/oauth/token
       userAuthorizationUri: http://localhost:8500/uaa/oauth/authorize
