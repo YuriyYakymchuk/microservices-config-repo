@@ -4,8 +4,6 @@ server:
 feign:
   hystrix:
     enabled: true
-    
-feign:
   client:
     config:
       default:
