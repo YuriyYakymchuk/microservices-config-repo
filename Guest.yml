@@ -1,2 +1,25 @@
 server:
   port: 8081
+  
+feign:
+  hystrix:
+    enabled: true
+    
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 10000
+  
+security:
+    oauth2:
+        client:
+          clientId: Bill
+          clientSecret: BillSecret
+          scope: openid
+          accessTokenUri: http://localhost:8500/uaa/oauth/token
+          userAuthorizationUri: http://localhost:8500/uaa/oauth/authorize
+        resource:
+    jwt:
+        key-uri: http://localhost:8500/uaa/oauth/token_key
