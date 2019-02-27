@@ -1,2 +1,12 @@
 server:
   port: 8085
+  
+auth:
+  username: admin
+  password: admin  
+  client:
+    id: Order
+    secret: OrderSecret
+  server:
+    token:
+      url: http://localhost:8500/uaa/oauth/token
