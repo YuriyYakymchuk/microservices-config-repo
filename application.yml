@@ -14,9 +14,9 @@ spring:
     virtual-host: dyeowntt
     password: 0LrXtN3QxWmnJ1VA251Wpl5vg-IambPI
   sleuth:
-    enabled: true
+    enabled: false
   zipkin:
-    enabled: true
+    enabled: false
 
 eureka:
   client:
