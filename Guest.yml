@@ -7,7 +7,7 @@ spring.cloud.stream.bindings:
     group: guest
     consumer:
       partitioned: false
-      instanceCount: 1
+      instanceCount: 2
       instanceIndex: 0
         
 auth:
