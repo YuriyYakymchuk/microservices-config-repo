@@ -1,5 +1,5 @@
 server:
-  port: 8079
+  port: 8081
        
 spring.cloud.stream.bindings:
   input:
@@ -7,8 +7,8 @@ spring.cloud.stream.bindings:
     group: guest
     consumer:
       partitioned: false
-      instanceCount: 2
-      instanceIndex: 1
+      instanceCount: 1
+      instanceIndex: 0
         
 auth:
   username: admin
