@@ -9,15 +9,22 @@ feign:
       default:
         connectTimeout: 100000
         readTimeout: 100000
-  
-security:
-    oauth2:
-        client:
-          clientId: Bill
-          clientSecret: BillSecret
-          scope: openid
-          accessTokenUri: http://localhost:8500/uaa/oauth/token
-          userAuthorizationUri: http://localhost:8500/uaa/oauth/authorize
-        resource:
-    jwt:
-        key-uri: http://localhost:8500/uaa/oauth/token_key
+        
+spring.cloud.stream.bindings:
+  input:
+    destination: guest
+    group: guest
+    consumer:
+      partitioned: false
+      instanceCount: 1
+      instanceIndex: 0
+        
+auth:
+  username: admin
+  password: admin  
+  client:
+    id: Guest
+    secret: GuestSecret
+  server:
+    token:
+      url: http://localhost:8500/uaa/oauth/token
