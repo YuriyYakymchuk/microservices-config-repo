@@ -10,13 +10,13 @@ spring:
         dialect: org.hibernate.dialect.MySQL5Dialect
   rabbitmq:
     host: hornet.rmq.cloudamqp.com
-    username: dyeowntt_123
-    virtual-host: dyeowntt_123
-    password: 0LrXtN3QxWmnJ1VA251Wpl5vg-IambPI_123
+    username: dyeowntt
+    virtual-host: dyeowntt
+    password: 0LrXtN3QxWmnJ1VA251Wpl5vg-IambPI
   sleuth:
-    enabled: false
+    enabled: true
   zipkin:
-    enabled: false
+    enabled: true
 
 eureka:
   client:
